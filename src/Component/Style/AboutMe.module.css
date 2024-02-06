@@ -1,0 +1,160 @@
+/* AboutMe.module.css */
+.hero {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  padding: 80px;
+  text-align: center;
+  margin: 20px 0px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards, slideIn 0.8s ease-in-out forwards;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffffff; /* Change font color to white */
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Education Section */
+.education {
+  margin-top: 40px;
+  display: flex; /* Add flex property to make it inline */
+  justify-content: space-between; /* Add space between items */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education h3 {
+  font-size: 1.8em;
+  color: #ffffff; /* Change color for the heading */
+  margin-bottom: 20px;
+  
+  padding-bottom: 10px;
+}
+
+.education p {
+  color: #bdc3c7; /* Change color for the text content */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.education ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education li {
+  color: #bdc3c7; /* Change color for list items */
+  margin-bottom: 10px;
+}
+
+/* Graduation Titles */
+.education p strong {
+  color: #e74c3c; /* Change color for graduation titles */
+}
+
+/* Internship Section */
+.internship {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.internship h3 {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff; /* Add a border under the heading */
+  padding-bottom: 10px;
+}
+
+.internshipItem {
+  background: linear-gradient(to right, #3498db, #2c3e50); /* Gradient background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+.internshipItem:hover {
+  transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+.internshipItem h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.internshipItem p {
+  color: #ecf0f1;
+  margin-bottom: 5px;
+}
+
+.internshipItem ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.internshipItem ul li {
+  color: #ecf0f1;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+  animation: pulse 0.5s infinite alternate;
+}
+
+/* Keyframes for fade-in and slide-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for button pulse animation */
+@keyframes pulse {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Hover effect - Change background color on hover */
+.hero:hover {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+}

@@ -1,0 +1,81 @@
+/* Project.module.css */
+.projects {
+  padding: 40px; /* Added padding for better spacing */
+  background: linear-gradient(to right, #0d8b7a, #00558f, #29c59a);
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projectCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; /* Hide overflowing content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.projectCard:hover {
+  transform: scale(1.05);
+}
+
+.projectImage {
+  width: 100%;
+  height: 160px;
+  object-fit: fill;
+  margin-bottom: 9px;
+  image-rendering: auto;
+}
+
+.projectInfo {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.projectLink {
+  background-color: #28a745; /* Change the background color */
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  align-self: center; /* Center the button horizontally */
+}
+
+.projectLink:hover {
+  background-color: #218838; /* Change the hover background color */
+}
+
+.showMoreButton {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.showMoreButton:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .projectCard {
+    width: 100%;
+  }
+}

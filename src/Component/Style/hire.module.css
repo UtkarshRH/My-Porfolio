@@ -1,0 +1,62 @@
+/* hire.module.css */
+.superContainer {
+    background: linear-gradient(to right, #0d8b7a, #00558f, #29c59a);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    height: 50vh;
+    margin-left: auto;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #eecc99;
+  }
+  
+  p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+  
+  button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #e55e00;
+  }
+  
+  /* Keyframes for FadeInUp Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

@@ -1,0 +1,97 @@
+/* Contact.module.css */
+.contactContainer {
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: url('F:\WEB\React-js\Personal_Portfolio\my-portfolio\src\Component\Assets\2987104_18430.jpg'); /* Update the path with your actual image path */
+  background-size: cover;
+  overflow: hidden;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 60px;
+  /* border-radius: 8px; */
+  background: linear-gradient(to bottom, #dadada, #333);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transform: rotate(360deg) scale(1);
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.9; /* Adjust the opacity value to make it more or less transparent */
+}
+
+/* .contactForm:hover {
+  transform: rotate(0deg) scale(1.1);
+} */
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Animation effect for form elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+label,
+input,
+textarea,
+button {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .contactForm {
+    max-width: 100%;
+  }
+}

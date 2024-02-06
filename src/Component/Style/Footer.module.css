@@ -1,0 +1,152 @@
+/* Footer.module.css */
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}
+
+.footerContent {
+  flex: 1;
+  background: linear-gradient(to right, #0d8b7a, #00558f, #29c59a);
+  padding: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogo {
+  text-align: center;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.footerLogo img {
+  width: 100px; /* Adjust logo size as needed */
+  height: 100px;
+  border-radius: 50%; /* Apply border-radius for a circular shape */
+  background: rgba(255, 255, 255, 0.8); /* Set a transparent background */
+  padding: 10px; /* Add padding for space and effect */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.footerLogo img:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+.footerLogo p {
+  color: #dbc3b3;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+/* .footerLinks {
+  margin-top: 20px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.footerLinks h2 {
+  font-size: 1.5rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+} */
+
+.footerLinks a {
+  text-decoration: none;
+  color: #333; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.footerSocial {
+  margin-top: 20px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.socialIcons img {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.2);
+}
+
+.footerBottom {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footerLinks h2 {
+    font-size: 1.2rem;
+  }
+
+  .footerLinks a {
+    font-size: 0.9rem;
+  }
+
+  .socialIcons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1200px) {
+  .footerLinks h2 {
+    font-size: 1.8rem;
+  }
+
+  .footerLinks a {
+    font-size: 1rem;
+  }
+
+  .socialIcons img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Keyframes for FadeInUp Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

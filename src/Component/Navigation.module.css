@@ -1,0 +1,172 @@
+/* Navigation.module.css */
+
+/* Base Styles */
+nav {
+  background: linear-gradient(to right, #0d8b7a, #00558f, #29c59a);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background-color: rgba(13, 139, 122, 0.7); /* Set the background color with transparency */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px; /* Margin between navigation items */
+}
+
+a {
+  text-decoration: none;
+  color: #ecf0f1; /* Text color */
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #e6d5c7; /* Hover color (different color) */
+  text-shadow: 0 0 10px rgba(28, 90, 161, 0.7); /* Blur effect */
+}
+
+a svg {
+  font-size: 1.5rem;
+  margin-right: 5px; /* Adjust the space between the icon and text */
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover svg {
+  transform: rotate(360deg); /* Rotate the icon on hover */
+}
+
+/* Animation effect for navigation items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+li {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Styles */
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  ul {
+    margin-top: 15px; /* Space between logo and navigation items */
+  }
+
+  li {
+    margin: 10px 0; /* Margin between navigation items on medium screens */
+  }
+
+  .mobileIcon {
+    display: block;
+    cursor: pointer;
+    color: #fff; /* Change color of the bars icon */
+    font-size: 1.5rem; /* Change size of the bars icon */
+  }
+
+  .navList {
+    display: none;
+    transition: max-height 0.3s ease-out; /* Add transition for smooth animation */
+    max-height: 0; /* Initially hide the list items */
+    overflow: hidden;
+  }
+
+  .navList.showMobileMenu {
+    max-height: 300px; /* Adjust max-height to show the list items */
+  }
+
+  .navList li {
+    margin: 0 15px;
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .showMobileMenu li {
+    margin: 10px 0;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1200px) {
+  ul {
+    margin-right: 30px; /* Example: Increase the space between navigation items for larger screens */
+  }
+}
+
+/* Mobile Nav Styles */
+.mobileNav {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.mobileIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.navList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navList li {
+  margin: 0 15px; /* Margin between navigation items */
+  animation: fadeIn 0.5s ease-out;
+}
+
+.showMobileMenu {
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: rgba(13, 139, 122, 0.9);
+  text-align: center;
+}
+
+.showMobileMenu li {
+  margin: 10px 0; /* Margin between navigation items on medium screens */
+}
+
+/* Responsive Styles */
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .mobileIcon {
+    display: block;
+  }
+
+  .navList {
+    display: block;
+  }
+}

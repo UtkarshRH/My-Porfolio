@@ -1,0 +1,254 @@
+/* Home.module.css */
+
+.myName {
+  color: #ffcc00;
+  font-family: 'Your Desired Font', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(to right, #0d8b7a, #00558f, #29c59a);
+  padding: 120px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+  color: #fff;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.profileImage {
+  width: 310px;
+  height: 310px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url('../Assets/PassportRem.png'); */
+  animation: glow 4s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+    box-shadow: 0 0 10px rgba(33, 109, 190, 0.7), 0 0 10px rgba(33, 109, 190, 0.7) inset;
+  }
+  25% {
+    background-position: 50px 0;
+    box-shadow: 0 0 20px rgb(90, 143, 156), 0 0 20px rgb(38, 130, 153) inset;
+  }
+  50% {
+    background-position: 100px 0;
+    box-shadow: 0 0 40px rgb(34, 190, 230), 0 0 40px rgb(34, 190, 230) inset;
+  }
+  75% {
+    background-position: 150px 0;
+    box-shadow: 0 0 20px rgb(90, 143, 156), 0 0 20px rgb(38, 130, 153) inset;
+  }
+  100% {
+    background-position: 200px 0;
+    box-shadow: 0 0 10px rgba(33, 109, 190, 0.7), 0 0 10px rgba(33, 109, 190, 0.7) inset;
+  }
+}
+
+.profileInfo h2,
+.profileInfo p {
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.intro {
+  background: url('../Assets/Bg3.png') center/100% 100% no-repeat; 
+  padding: 15px; 
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.myName {
+  color: #ffcc00;
+  font-family: 'Your Desired Font', sans-serif;
+}
+
+.intro h1,
+.intro p,
+.myName {
+  max-width: 800px;
+  width: 100%;
+  margin: 4 auto; 
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .intro {
+    display: block;
+  }
+}
+
+.intro p,
+.additionalInfo p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+  color: #eee;
+}
+
+.skills h2,
+.additionalInfo h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.skillIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillIcon {
+  width: 100px;
+  aspect-ratio: 1/1;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillIcon:hover {
+  transform: scale(1.2);
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sectionHeader i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.additionalInfo h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.additionalInfo p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+  color: #eee;
+}
+.additionalInfo h3{
+  color: #abd120;
+  margin-right: 400px;
+} 
+.additionalInfo h4{
+  color: #abd120;
+  margin-right: 450px;
+} 
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px;
+  }
+
+  .hero h1,
+  .myName {
+    font-size: 2em;
+  }
+
+  .hero p,
+  .content {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 6px 12px;
+  }
+}
