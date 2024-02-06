@@ -3,7 +3,7 @@
   padding: 50px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background-image: url('F:\WEB\React-js\Personal_Portfolio\my-portfolio\src\Component\Assets\2987104_18430.jpg'); /* Update the path with your actual image path */
+  background-image: url('../Assets/bgimg.jpg'); /* Update the path with your actual image path */
   background-size: cover;
   overflow: hidden;
 }
